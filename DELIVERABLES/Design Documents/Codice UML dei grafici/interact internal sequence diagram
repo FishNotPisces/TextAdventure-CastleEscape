@@ -1,0 +1,80 @@
+@startuml
+
+title INTERACT internal sequence diagram
+actor User
+Participant Controller
+Participant CommandReader
+Participant Game
+Participant Player
+Participant Location
+Participant Storage
+Participant Item
+
+User -> Controller : interact <item>
+activate Controller
+
+Controller -> CommandReader : read(interact <item>)
+activate CommandReader
+CommandReader -> Game : interact(<item>)
+
+
+
+activate Game
+
+Game -> Player : player.getLocation()
+Activate Player
+Player --> Game : return location
+Deactivate Player
+
+Game -> Location : location.getStorage()
+Activate Location
+Location --> Game : return storage
+Deactivate Location
+
+Game -> Storage : storage.hasItem(<item>)
+Activate Storage
+Storage --> Game : return boolean1
+Deactivate Storage
+
+Game -> Player : player.getInventory()
+Activate Player
+Player --> Game : return inventory
+Deactivate Player
+
+Game -> Storage : inventory.hasItem(<item>)
+Activate Storage
+Storage --> Game : return boolean2
+Deactivate Storage
+
+alt boolean1 = true || boolean2 = true
+  alt boolean1 = true
+    Game -> Storage : storage.getItem(<item>)
+    Activate Storage
+    Storage --> Game : return item
+    Deactivate Storage
+  else else
+    Game -> Storage : inventory.getItem(<item>)
+    Activate Storage
+    Storage --> Game : return item
+    Deactivate Storage
+  end
+
+  Game -> Item : item.getDescription()
+  Activate Item
+  Item --> Game : return description
+  Deactivate Item
+  Game -> Game : specialCases(item)
+  Game -->Controller : show(description)
+  Game --> CommandReader : return item
+  CommandReader -> CommandReader : updateLastCommand()
+  CommandReader -> Game : updateLastItem()
+
+else else
+  Game --> Controller : show(item not found)
+  Game --> CommandReader : return null
+  Deactivate CommandReader
+  Deactivate Controller
+  Deactivate Game
+end
+@enduml
+@enduml

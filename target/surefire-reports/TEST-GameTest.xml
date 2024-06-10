@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="GameTest" time="13.793" tests="18" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
+    <property name="java.class.path" value="C:\Users\Alessia\OneDrive\Desktop\Uni\UNI 2\2 SEM\Progetto-TEXT-ADVENTURE\target\test-classes;C:\Users\Alessia\OneDrive\Desktop\Uni\UNI 2\2 SEM\Progetto-TEXT-ADVENTURE\target\classes;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\s3\2.25.58\s3-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\aws-xml-protocol\2.25.58\aws-xml-protocol-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\aws-query-protocol\2.25.58\aws-query-protocol-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\protocol-core\2.25.58\protocol-core-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\arns\2.25.58\arns-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\profiles\2.25.58\profiles-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\crt-core\2.25.58\crt-core-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\http-auth\2.25.58\http-auth-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\identity-spi\2.25.58\identity-spi-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\http-auth-spi\2.25.58\http-auth-spi-2.25.58.jar;C:\Users\Alessia\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\http-auth-aws\2.25.58\http-auth-aws-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\checksums\2.25.58\checksums-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\checksums-spi\2.25.58\checksums-spi-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\sdk-core\2.25.58\sdk-core-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\auth\2.25.58\auth-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\eventstream\eventstream\1.0.1\eventstream-1.0.1.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\http-client-spi\2.25.58\http-client-spi-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\regions\2.25.58\regions-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\annotations\2.25.58\annotations-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\utils\2.25.58\utils-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\aws-core\2.25.58\aws-core-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\metrics-spi\2.25.58\metrics-spi-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\json-utils\2.25.58\json-utils-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\third-party-jackson-core\2.25.58\third-party-jackson-core-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\endpoints-spi\2.25.58\endpoints-spi-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\apache-client\2.25.58\apache-client-2.25.58.jar;C:\Users\Alessia\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Alessia\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Alessia\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Alessia\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\netty-nio-client\2.25.58\netty-nio-client-2.25.58.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-codec-http\4.1.108.Final\netty-codec-http-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-codec-http2\4.1.108.Final\netty-codec-http2-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-codec\4.1.108.Final\netty-codec-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-transport\4.1.108.Final\netty-transport-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-common\4.1.108.Final\netty-common-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-buffer\4.1.108.Final\netty-buffer-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-handler\4.1.108.Final\netty-handler-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.108.Final\netty-transport-native-unix-common-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.108.Final\netty-transport-classes-epoll-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-resolver\4.1.108.Final\netty-resolver-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\Alessia\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Alessia\.m2\repository\ch\qos\logback\logback-classic\1.4.12\logback-classic-1.4.12.jar;C:\Users\Alessia\.m2\repository\ch\qos\logback\logback-core\1.4.12\logback-core-1.4.12.jar;C:\Users\Alessia\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Alessia\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Alessia\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Alessia\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Alessia\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Alessia\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Alessia\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Alessia\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Alessia\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Alessia\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Rome"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IT"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
+    <property name="sun.java.command" value="C:\Users\Alessia\AppData\Local\Temp\surefire16940165008029209420\surefirebooter2564729615880543675.jar C:\Users\Alessia\AppData\Local\Temp\surefire16940165008029209420 2024-06-07T09-20-57_096-jvmRun1 surefire2516687830427555340tmp surefire_010651724705114188857tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Alessia\OneDrive\Desktop\Uni\UNI 2\2 SEM\Progetto-TEXT-ADVENTURE\target\test-classes;C:\Users\Alessia\OneDrive\Desktop\Uni\UNI 2\2 SEM\Progetto-TEXT-ADVENTURE\target\classes;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\s3\2.25.58\s3-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\aws-xml-protocol\2.25.58\aws-xml-protocol-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\aws-query-protocol\2.25.58\aws-query-protocol-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\protocol-core\2.25.58\protocol-core-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\arns\2.25.58\arns-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\profiles\2.25.58\profiles-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\crt-core\2.25.58\crt-core-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\http-auth\2.25.58\http-auth-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\identity-spi\2.25.58\identity-spi-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\http-auth-spi\2.25.58\http-auth-spi-2.25.58.jar;C:\Users\Alessia\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\http-auth-aws\2.25.58\http-auth-aws-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\checksums\2.25.58\checksums-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\checksums-spi\2.25.58\checksums-spi-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\sdk-core\2.25.58\sdk-core-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\auth\2.25.58\auth-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\eventstream\eventstream\1.0.1\eventstream-1.0.1.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\http-client-spi\2.25.58\http-client-spi-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\regions\2.25.58\regions-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\annotations\2.25.58\annotations-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\utils\2.25.58\utils-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\aws-core\2.25.58\aws-core-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\metrics-spi\2.25.58\metrics-spi-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\json-utils\2.25.58\json-utils-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\third-party-jackson-core\2.25.58\third-party-jackson-core-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\endpoints-spi\2.25.58\endpoints-spi-2.25.58.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\apache-client\2.25.58\apache-client-2.25.58.jar;C:\Users\Alessia\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Alessia\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Alessia\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Alessia\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Alessia\.m2\repository\software\amazon\awssdk\netty-nio-client\2.25.58\netty-nio-client-2.25.58.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-codec-http\4.1.108.Final\netty-codec-http-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-codec-http2\4.1.108.Final\netty-codec-http2-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-codec\4.1.108.Final\netty-codec-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-transport\4.1.108.Final\netty-transport-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-common\4.1.108.Final\netty-common-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-buffer\4.1.108.Final\netty-buffer-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-handler\4.1.108.Final\netty-handler-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.108.Final\netty-transport-native-unix-common-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.108.Final\netty-transport-classes-epoll-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\io\netty\netty-resolver\4.1.108.Final\netty-resolver-4.1.108.Final.jar;C:\Users\Alessia\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\Alessia\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Alessia\.m2\repository\ch\qos\logback\logback-classic\1.4.12\logback-classic-1.4.12.jar;C:\Users\Alessia\.m2\repository\ch\qos\logback\logback-core\1.4.12\logback-core-1.4.12.jar;C:\Users\Alessia\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Alessia\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Alessia\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Alessia\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Alessia\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Alessia\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Alessia\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Alessia\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Alessia\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Alessia\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Alessia"/>
+    <property name="user.language" value="it"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-03-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Alessia\OneDrive\Desktop\Uni\UNI 2\2 SEM\Progetto-TEXT-ADVENTURE"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Alessia\AppData\Local\Temp\surefire16940165008029209420\surefirebooter2564729615880543675.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22+36-2370"/>
+    <property name="user.name" value="Alessia"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Alessia\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Alessia\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2024.1.1"/>
+    <property name="java.version" value="22"/>
+    <property name="user.dir" value="C:\Users\Alessia\OneDrive\Desktop\Uni\UNI 2\2 SEM\Progetto-TEXT-ADVENTURE"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\MATLAB\R2022a\bin;C:\Program Files\Git\cmd;C:\Program Files\CMake\bin;C:\Program Files\Fortect;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\PowerShell\7\;C:\Users\Alessia\Downloads\apache-maven-3.9.6\bin;C:\Users\Alessia\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.2\bin;;C:\Users\Alessia\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\mingw64\bin;C:\Users\Alessia\AppData\Local\GitHubDesktop\bin;C:\Cmake\bin;C:\cmake-3.28.0-rc5-windows-x86_64\cmake-3.28.0-rc5-windows-x86_64\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.1\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22+36-2370"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="testInteractItemInInventory" classname="GameTest" time="7.948">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:02.717 [main] DEBUG software.amazon.awssdk.core.internal.http.loader.ClasspathSdkHttpServiceProvider -- The HTTP implementation loaded is software.amazon.awssdk.http.apache.ApacheSdkHttpService@49f5c307
+09:21:04.674 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@4af46df3, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@4158debd, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@af78c87, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@773dab28, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@1ecfcbc9, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@1965539b, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@2fc07784, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@353efdbf, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@55cff952, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@660591fb, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@4a55a6e8, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@8c46918, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@226b143b, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@682bd3c4, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@f2e4acf, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@24097e9b, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@5eb97ced, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@68ba310d, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@153f66e7, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@7aad3f7d]
+09:21:04.879 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@2fc07784' modified the message with its modifyHttpRequest method.
+09:21:05.023 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:05.026 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:05.075 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:0d536374-7301-db9c-34cc-b31a3208d5dc
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072105Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:05.081 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: 1188459bd986e174f612825f7993e0009dafc359847ab036b77bc528ec2a7966
+09:21:05.082 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072105Z
+20240607/eu-north-1/s3/aws4_request
+1188459bd986e174f612825f7993e0009dafc359847ab036b77bc528ec2a7966
+09:21:05.772 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:06.386 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:06.751 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: 9FT5XMDF1433T8XS, Extended Request ID: 6PPijnesx/Wfk57/VhhYf88WporJWLroUO3AtnsIk/S9tC7OfWb8nC26ncu6NvK/SCofu1w3Y7FM3T7SPV+1tA==
+09:21:06.752 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: 9FT5XMDF1433T8XS, Extended Request ID: 6PPijnesx/Wfk57/VhhYf88WporJWLroUO3AtnsIk/S9tC7OfWb8nC26ncu6NvK/SCofu1w3Y7FM3T7SPV+1tA==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testCreatePlayer" classname="GameTest" time="0.292">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:08.515 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@4b5a078a, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@4c361f63, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@6ed922e1, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@4eb166a1, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@554c4eaa, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@29fd8e67, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@e146f93, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@4bd5849e, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@7cdbaa50, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@39909d1a, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@1455154c, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@7343922c, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@526b2f3e, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@6f2e1024, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@536d97f8, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@3c50ad4b, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@37496720, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@28f9fedd, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@17947e6d, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@2e17a321]
+09:21:08.519 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@e146f93' modified the message with its modifyHttpRequest method.
+09:21:08.520 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:08.520 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:08.521 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:4e4a945b-36ed-4619-2742-fd58de30b458
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072108Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:08.521 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: 022cae6e5d12c2a5501f67d3da6a5de6853454ddaaf8bb6b53106f721649676d
+09:21:08.522 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072108Z
+20240607/eu-north-1/s3/aws4_request
+022cae6e5d12c2a5501f67d3da6a5de6853454ddaaf8bb6b53106f721649676d
+09:21:08.567 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:08.642 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:08.716 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: 7GNSQDMGJEA2FXAN, Extended Request ID: xCx8azigXyDPNP4ackOlOC0doA6gz75fwIm8u+yQfHXNRkUT3vSfwlLtLvzl5F5MPncdqbAN75QOnoWfas/6PA==
+09:21:08.716 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: 7GNSQDMGJEA2FXAN, Extended Request ID: xCx8azigXyDPNP4ackOlOC0doA6gz75fwIm8u+yQfHXNRkUT3vSfwlLtLvzl5F5MPncdqbAN75QOnoWfas/6PA==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testHelp" classname="GameTest" time="0.326">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:08.818 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@794366a5, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@480b57e2, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@40f35e52, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@340d6d89, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@561953e3, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@443faa85, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@1ee47d9e, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@41da3aee, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@5dc0ff7d, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@64920dc2, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@59a79443, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@493ac8d3, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@13dbed9e, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@67531e3a, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@2b38b1f, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@1d50a7ca, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@51ab1ee3, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@2e766822, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@3003e580, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@28757abd]
+09:21:08.821 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@1ee47d9e' modified the message with its modifyHttpRequest method.
+09:21:08.822 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:08.822 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:08.824 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:dea0202c-cc89-895f-5f37-f274625a187f
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072108Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:08.824 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: 6dc046acb0f9299012636332b6f2351bb65ba60503be824fc503d0812cd3d323
+09:21:08.825 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072108Z
+20240607/eu-north-1/s3/aws4_request
+6dc046acb0f9299012636332b6f2351bb65ba60503be824fc503d0812cd3d323
+09:21:08.874 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:08.950 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:09.028 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: 7GNVM8XE4JV588TE, Extended Request ID: oqG/w/8h1hI3fqgSk1xq2nEfahLvp7wLAzC9iVkpM4+fwdPt7Zmr4q2ParoF1CIMomoubk+2V02a06Qo6TJAQQ==
+09:21:09.028 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: 7GNVM8XE4JV588TE, Extended Request ID: oqG/w/8h1hI3fqgSk1xq2nEfahLvp7wLAzC9iVkpM4+fwdPt7Zmr4q2ParoF1CIMomoubk+2V02a06Qo6TJAQQ==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testGo" classname="GameTest" time="0.341">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:09.180 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@479b5066, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@64deb58f, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@2b1cd7bc, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@33379242, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@2e32fc22, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@3f5156a6, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@72bdd7c7, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@7d17ee50, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@44fdce3c, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@712c5463, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@6d33a66e, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@2f14b0f6, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@5b20706, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@16aed49f, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@66de00f2, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@6c479fdf, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@79d82f66, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@19b206ee, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@ffd4cba, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@5f1483fd]
+09:21:09.182 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@72bdd7c7' modified the message with its modifyHttpRequest method.
+09:21:09.182 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:09.183 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:09.185 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:9baa5185-3bc6-771a-5a05-20e2e6743d00
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072109Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:09.185 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: 8319628c1ec70f028c8376d417b67f8e0458a94eb266aa61cf81cd3db2d82e11
+09:21:09.186 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072109Z
+20240607/eu-north-1/s3/aws4_request
+8319628c1ec70f028c8376d417b67f8e0458a94eb266aa61cf81cd3db2d82e11
+09:21:09.243 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:09.316 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:09.391 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: Z07PX7CPDNX0FS85, Extended Request ID: kQrvf8hrLgvaamzpCR4G/jvN7jR67d8qaP7LU75FpuazSHiimcrRhXs+BICCDNd7X0SbKxpXKrvUnML8hZRw/A==
+09:21:09.391 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: Z07PX7CPDNX0FS85, Extended Request ID: kQrvf8hrLgvaamzpCR4G/jvN7jR67d8qaP7LU75FpuazSHiimcrRhXs+BICCDNd7X0SbKxpXKrvUnML8hZRw/A==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testInteractWithItemFound" classname="GameTest" time="0.31">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:09.482 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@af7e376, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@5dcd0cdf, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@4fb04a72, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@1e79d43, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@343e225a, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@1a07bf6, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@4c0e426a, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@713ec32d, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@34d713a2, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@36aab105, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@889a8a8, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@f29353f, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@36f7d7b, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@60aec68a, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@25a7fedf, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@6361b799, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@1b9d9a2b, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@d919544, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@17dad32f, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@79696332]
+09:21:09.484 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@4c0e426a' modified the message with its modifyHttpRequest method.
+09:21:09.484 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:09.484 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:09.485 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:db8740db-022d-e3ba-ad54-c3e319d6e132
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072109Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:09.485 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: 36f9106e9b882d375a37f24fe6010c51dda368933fb70faa65eab44cce90d82c
+09:21:09.485 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072109Z
+20240607/eu-north-1/s3/aws4_request
+36f9106e9b882d375a37f24fe6010c51dda368933fb70faa65eab44cce90d82c
+09:21:09.536 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:09.611 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:09.689 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: Z07R65QHKWTD9W8S, Extended Request ID: gIY38TG7yb01O/hlG8wWLU03X6aX67S/vKQ6nUa4lteAL9Uel/+J3OPmDezfiem15HRatHMFiPWYUWzagrc9mg==
+09:21:09.690 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: Z07R65QHKWTD9W8S, Extended Request ID: gIY38TG7yb01O/hlG8wWLU03X6aX67S/vKQ6nUa4lteAL9Uel/+J3OPmDezfiem15HRatHMFiPWYUWzagrc9mg==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testGoDirection" classname="GameTest" time="0.839">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:09.795 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@2753316c, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@59edb4f5, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@2792b416, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@4735d6e5, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@79d3473e, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@4dad0eed, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@7fad214a, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@164642a4, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@75cf0de5, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@50b0afd7, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@468173fa, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@62765aec, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@6f5bd362, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@3a401749, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@7793ad58, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@27e2287c, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@16132f21, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@2cd388f5, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@4640195a, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@70d77826]
+09:21:09.798 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@7fad214a' modified the message with its modifyHttpRequest method.
+09:21:09.800 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:09.801 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:09.802 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:32ba709d-90a8-094f-4420-419790ed164b
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072109Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:09.802 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: 2335f5001c40092522f4d67c54d81edefac16b5bdfff5d2718d6db7f47cd4657
+09:21:09.802 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072109Z
+20240607/eu-north-1/s3/aws4_request
+2335f5001c40092522f4d67c54d81edefac16b5bdfff5d2718d6db7f47cd4657
+09:21:09.851 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:09.925 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.001 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: Z07X305VTS1CA6JZ, Extended Request ID: W0tasSTuIhgyCQBVKq0tCJFyPVtk2wldYB1bgkUbplWIqt0VdlbHwLuCeK3MIYoD88FnqhnIkbAoq1zLt1bhww==
+09:21:10.002 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: Z07X305VTS1CA6JZ, Extended Request ID: W0tasSTuIhgyCQBVKq0tCJFyPVtk2wldYB1bgkUbplWIqt0VdlbHwLuCeK3MIYoD88FnqhnIkbAoq1zLt1bhww==
++ FUNZIONA true
+true
+true
+true
+09:21:10.546 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.550 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.551 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.552 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.552 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.552 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.553 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.553 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.553 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.553 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.554 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.554 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.578 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.579 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.579 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+]]></system-out>
+  </testcase>
+  <testcase name="testSpecialCases" classname="GameTest" time="0.266">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:10.628 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@52559a69, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@285583d4, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@1039bfc4, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@7f85217c, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@1fd7a37, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@5b202ff, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@58a84a12, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@e700eba, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@6436e181, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@7186b202, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@6b649efa, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@65ef48f2, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@36068727, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@72543547, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@3d88e6b9, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@22bf9122, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@208205ed, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@73afe2b7, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@9687f55, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@5700c9db]
+09:21:10.630 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@58a84a12' modified the message with its modifyHttpRequest method.
+09:21:10.630 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:10.630 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:10.631 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:f7b4c1a5-d96f-6aed-707b-9f08079db1c7
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072110Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:10.631 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: d4308b6436cb71dab3ebbee9e5d3119a7ec6f7ec04d791a8b1029d8f88285baf
+09:21:10.631 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072110Z
+20240607/eu-north-1/s3/aws4_request
+d4308b6436cb71dab3ebbee9e5d3119a7ec6f7ec04d791a8b1029d8f88285baf
+09:21:10.677 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:10.742 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:10.803 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: 7AZ91XSGRNNT6H2B, Extended Request ID: TLIZ2R+NOqv62sH5iUfr8xBadU1uHxzEOY0zyr4TmRoH12oiVHVBUso5g+421oVvsRcU59ipR0rn0klIWc+lZg==
+09:21:10.803 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: 7AZ91XSGRNNT6H2B, Extended Request ID: TLIZ2R+NOqv62sH5iUfr8xBadU1uHxzEOY0zyr4TmRoH12oiVHVBUso5g+421oVvsRcU59ipR0rn0klIWc+lZg==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testUseItemNotInInventory" classname="GameTest" time="0.297">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:10.896 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@7b5cc918, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@62b3a2f6, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@202898d7, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@317890ea, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@2c719bd4, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@53aa38be, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@37a0ec3c, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@422ad5e2, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@62a54948, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@6048e26a, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@50b93353, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@44286963, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@c8f97a7, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@2b736fee, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@3249e278, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@35adf623, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@456f7d9e, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@75d366c2, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@8f40022, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@5232e3f1]
+09:21:10.897 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@37a0ec3c' modified the message with its modifyHttpRequest method.
+09:21:10.898 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:10.899 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:10.900 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:90564972-489e-d6fb-4b8a-c41c35998005
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072110Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:10.900 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: efaaeba3f95be89d6fb125f79fb572a4f56e50beb68192381409b84aab166a78
+09:21:10.900 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072110Z
+20240607/eu-north-1/s3/aws4_request
+efaaeba3f95be89d6fb125f79fb572a4f56e50beb68192381409b84aab166a78
+09:21:10.947 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:11.026 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:11.109 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: 8YGDD2E0F26MVAVC, Extended Request ID: ZeiaDjTqK/AW5PC4bFNoq8/EsiJ7UVD23ryYeN+jFHFIv0CamWCjXA29QZqJuGadnpB19g8fehfXl3lOc2g5MA==
+09:21:11.109 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: 8YGDD2E0F26MVAVC, Extended Request ID: ZeiaDjTqK/AW5PC4bFNoq8/EsiJ7UVD23ryYeN+jFHFIv0CamWCjXA29QZqJuGadnpB19g8fehfXl3lOc2g5MA==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testVictory" classname="GameTest" time="0.326">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:11.199 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@30aec673, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@549ac12c, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@188a5fc2, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@1cb9ef52, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@5a622fe8, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@58f31629, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@124d26ba, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@415d88de, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@a0bf272, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@4a89ef44, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@310a7859, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@1cbc1dde, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@4971f459, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@4c07d1fc, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@2eada095, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@52831a73, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@1416ff46, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@66ec4409, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@2506e949, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@6f1c3f18]
+09:21:11.202 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@124d26ba' modified the message with its modifyHttpRequest method.
+09:21:11.203 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:11.203 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:11.204 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:80c7ff9a-7a19-3411-5670-bb3937b885cf
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072111Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:11.204 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: c9bdd7ec6420952bdede1d5be6eefa62eb0d23c23cdf47bd16d94b057aba5604
+09:21:11.204 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072111Z
+20240607/eu-north-1/s3/aws4_request
+c9bdd7ec6420952bdede1d5be6eefa62eb0d23c23cdf47bd16d94b057aba5604
+09:21:11.252 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:11.336 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:11.400 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: 8YGFWVRTTH7RZDAX, Extended Request ID: X+XnGBzKFYBFUD/fGkcWqJvNhHFNuzMaBh54h/sVd/i4GxltfcS8ZN5jtdxuo4i8xgpOoarVD/Dy1iTCO6YAcw==
+09:21:11.401 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: 8YGFWVRTTH7RZDAX, Extended Request ID: X+XnGBzKFYBFUD/fGkcWqJvNhHFNuzMaBh54h/sVd/i4GxltfcS8ZN5jtdxuo4i8xgpOoarVD/Dy1iTCO6YAcw==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testGoInvalidDirection" classname="GameTest" time="0.307">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:11.523 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@7cf63b9a, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@4776e209, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@265a094b, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@1f536481, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@5234b61a, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@22a260ff, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@54c425b1, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@50b734c4, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@2744dcae, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@16d0e521, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@634ca3e7, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@ab4aa5e, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@b14b60a, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@1a7cb3a4, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@1c297897, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@33e0c716, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@1d6a8386, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@6274f21c, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@35cec305, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@237add]
+09:21:11.525 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@54c425b1' modified the message with its modifyHttpRequest method.
+09:21:11.525 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:11.526 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:11.526 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:be02ace0-a23b-71d9-cee0-1cc3b222e13d
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072111Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:11.527 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: 90c095299617a68ba323992f6471270bea7d7b5d20589e9d25af50f413be7a36
+09:21:11.527 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072111Z
+20240607/eu-north-1/s3/aws4_request
+90c095299617a68ba323992f6471270bea7d7b5d20589e9d25af50f413be7a36
+09:21:11.585 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:11.659 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:11.744 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: 8YG31FVSS7WY5823, Extended Request ID: qzFTYi7btHINRpFVv6+vqDZGZN88t2B5bK3OnHlzNh9D0++YZhrnJoDTWKU82mhVHk4wywZ/YBN/J9D7lgll6A==
+09:21:11.744 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: 8YG31FVSS7WY5823, Extended Request ID: qzFTYi7btHINRpFVv6+vqDZGZN88t2B5bK3OnHlzNh9D0++YZhrnJoDTWKU82mhVHk4wywZ/YBN/J9D7lgll6A==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testInteractWithItemNotFound" classname="GameTest" time="0.294">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:11.832 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@2dff7085, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@2faa55bb, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@501957bf, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@5d1d9d73, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@b30a50d, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@764a3e5d, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@6c742b84, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@5db3d57c, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@53a50b0a, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@74ba6ff5, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@395f52ed, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@7a84788f, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@102c18e, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@26e0d39c, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@65eb3597, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@3c7279a5, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@2bebd114, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@b379bc6, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@374c40ba, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@18dcb8a7]
+09:21:11.833 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@6c742b84' modified the message with its modifyHttpRequest method.
+09:21:11.834 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:11.834 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:11.835 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:43e9734a-ceac-745d-16a4-5c448006c42d
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072111Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:11.836 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: d4ebc4d11e8a36606b1d9ef59aa22c20477a60b9662fd82b2e2f3bca6a85019e
+09:21:11.836 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072111Z
+20240607/eu-north-1/s3/aws4_request
+d4ebc4d11e8a36606b1d9ef59aa22c20477a60b9662fd82b2e2f3bca6a85019e
+09:21:11.882 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:11.965 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.033 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: 8YGE4221JA6440XN, Extended Request ID: RCVh1ei44U11l5BKd9YxnzrfkonyBOo5s2MSdZzFOAyZi/sGmO+20frfdqyBgv0V28quLIrEqDXF3SAZ+vYDSA==
+09:21:12.033 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: 8YGE4221JA6440XN, Extended Request ID: RCVh1ei44U11l5BKd9YxnzrfkonyBOo5s2MSdZzFOAyZi/sGmO+20frfdqyBgv0V28quLIrEqDXF3SAZ+vYDSA==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateLastItemUsed" classname="GameTest" time="0.298">
+    <system-out><![CDATA[09:21:12.109 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.110 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.110 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.110 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.111 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.111 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.112 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.112 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.112 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.112 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.113 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.113 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.113 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.114 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.115 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+true
+true
+true
+true
+09:21:12.135 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@65cc5252, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@42c12b3e, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@2dbfa972, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@46f73ffa, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@41aebbb4, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@afde064, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@5a592c70, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@252ec02e, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@11e9ac24, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@74f280bd, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@675b18ff, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@34279b8a, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@687389a6, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@8641b7d, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@37c7766e, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@3fb450d7, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@4b7ed03e, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@636985df, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@6f91fbda, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@723e3c17]
+09:21:12.137 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@5a592c70' modified the message with its modifyHttpRequest method.
+09:21:12.137 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:12.138 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:12.139 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:a5016dce-6bcf-9644-5bfc-b9045857e653
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072112Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:12.139 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: 7559be25348a9a077df1f78f0b5702bab98919f7785fb69a1d3375411b8979c7
+09:21:12.140 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072112Z
+20240607/eu-north-1/s3/aws4_request
+7559be25348a9a077df1f78f0b5702bab98919f7785fb69a1d3375411b8979c7
+09:21:12.189 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:12.256 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.341 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: 501D5NZERWX8BJ2P, Extended Request ID: 7MJSZmub/paSs3qAizIR37/cpEWAUAwcNiq+1JgpaqIPPPJPIfvz+eyzm2lL7gGGZGmWMb00KN4QMI6NrtA8wQ==
+09:21:12.341 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: 501D5NZERWX8BJ2P, Extended Request ID: 7MJSZmub/paSs3qAizIR37/cpEWAUAwcNiq+1JgpaqIPPPJPIfvz+eyzm2lL7gGGZGmWMb00KN4QMI6NrtA8wQ==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testInteract" classname="GameTest" time="0.3">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:12.426 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@561f9d92, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@1c84d80a, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@7ceb6c45, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@629075f4, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@48499739, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@723742b2, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@559991f5, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@34c76167, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@30b3d899, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@78d92eef, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@61d60e38, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@6e95973c, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@404ced67, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@71531dd7, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@20256a0b, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@624b3544, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@454bcbbf, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@2c9fdb64, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@27e199ce, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@1c3b6963]
+09:21:12.428 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@559991f5' modified the message with its modifyHttpRequest method.
+09:21:12.429 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:12.429 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:12.430 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:84069127-9c85-97aa-6f53-23a9a65a70f8
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072112Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:12.430 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: 74d5c9c42270c4ca497dbc56203bfa653a985eb175cd532e80cd32c37a363053
+09:21:12.430 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072112Z
+20240607/eu-north-1/s3/aws4_request
+74d5c9c42270c4ca497dbc56203bfa653a985eb175cd532e80cd32c37a363053
+09:21:12.473 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:12.535 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.599 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: 501DGJ4RRV23VS28, Extended Request ID: MIsJlvAFB3dJkYHwB9OrKQd/y0DiTKBQdJikDJU4rnxXrLmR9fqjCFTTqcjiN1o/l9NBf5FwxNy14V9GFu69fw==
+09:21:12.600 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: 501DGJ4RRV23VS28, Extended Request ID: MIsJlvAFB3dJkYHwB9OrKQd/y0DiTKBQdJikDJU4rnxXrLmR9fqjCFTTqcjiN1o/l9NBf5FwxNy14V9GFu69fw==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testGetMap" classname="GameTest" time="0.279">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:12.726 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@283ab206, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@35fa450f, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@3e03046d, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@9b3be1c, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@74e497ae, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@13516600, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@35d7386b, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@21002393, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@718989fa, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@69f080ad, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@6568f998, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@45d4421d, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@782fd504, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@1537c744, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@37314843, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@50122012, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@569348e1, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@7db5b890, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@407b8435, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@1282e98]
+09:21:12.729 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@35d7386b' modified the message with its modifyHttpRequest method.
+09:21:12.731 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:12.732 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:12.732 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:1548c4bf-f50d-1628-8b00-e1eccb093f65
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072112Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:12.732 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: 473649e5267d5ab1b699972ee09f00501b322aeaee4cd1631ffea18a836af64d
+09:21:12.733 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072112Z
+20240607/eu-north-1/s3/aws4_request
+473649e5267d5ab1b699972ee09f00501b322aeaee4cd1631ffea18a836af64d
+09:21:12.778 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:12.843 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:12.918 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: 5011PJV4BY6NGNZW, Extended Request ID: CD9Lc2eBmouC8n/SsbB/kCQfozOiVzZol6hbhGXY58+pMLStDzCfkMoBvmdpKsZSCJpHG26p+7Bdrir5/4S2ew==
+09:21:12.918 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: 5011PJV4BY6NGNZW, Extended Request ID: CD9Lc2eBmouC8n/SsbB/kCQfozOiVzZol6hbhGXY58+pMLStDzCfkMoBvmdpKsZSCJpHG26p+7Bdrir5/4S2ew==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testGoBack" classname="GameTest" time="0.269">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:13.018 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@34d9df9f, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@35c8be21, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@60807fd9, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@6bcdd6e4, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@1192c925, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@615b5480, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@24691c5, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@7b91d9f, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@6537ac, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@3b218c74, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@ddffa6c, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@42c54bad, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@6bb4cc0e, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@5cc1bf20, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@2e3f324e, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@46cf8c07, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@b56ec6c, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@5abf6a99, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@dc59ec2, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@375084c9]
+09:21:13.019 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@24691c5' modified the message with its modifyHttpRequest method.
+09:21:13.020 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:13.020 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:13.021 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:0a22b852-2876-90b6-63a2-d639ef90a1ab
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072113Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:13.021 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: cbd3362ab836854410316d27d9fea03ca143b849cc0fd186bb76130ff10cd8f1
+09:21:13.021 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072113Z
+20240607/eu-north-1/s3/aws4_request
+cbd3362ab836854410316d27d9fea03ca143b849cc0fd186bb76130ff10cd8f1
+09:21:13.070 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:13.133 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:13.193 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: 4YTFWEXQ659ZMT8R, Extended Request ID: hGsXQm9bWcfiRbBOUWo4qunitN4FLhljI9AzLp1GJgnRH9bwYRPr6QyUlU0fREm/HBjioxjQNh/MjN5u1aiCvw==
+09:21:13.193 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: 4YTFWEXQ659ZMT8R, Extended Request ID: hGsXQm9bWcfiRbBOUWo4qunitN4FLhljI9AzLp1GJgnRH9bwYRPr6QyUlU0fREm/HBjioxjQNh/MjN5u1aiCvw==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testUseWrongItem" classname="GameTest" time="0.367">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:13.282 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@62735b13, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@7aae1170, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@4ef5dd23, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@163e8949, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@6eede35e, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@64c25a62, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@43e8f1c, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@66a82a13, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@675ec28b, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@11399548, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@610fbe1c, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@46d0f89c, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@570b2057, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@a457c2b, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@16a6dc21, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@5773d271, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@59f45950, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@7871d261, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@58164e9a, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@11bfffb3]
+09:21:13.284 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@43e8f1c' modified the message with its modifyHttpRequest method.
+09:21:13.284 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:13.284 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:13.285 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:289a795b-56e5-c3da-79c3-633751f7519b
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072113Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:13.285 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: 6838b4eaa3f2c896119cf24541039cd92975fc2d74aa0e230e12f6b132e449d0
+09:21:13.285 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072113Z
+20240607/eu-north-1/s3/aws4_request
+6838b4eaa3f2c896119cf24541039cd92975fc2d74aa0e230e12f6b132e449d0
+09:21:13.333 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:13.400 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:13.463 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: 4YT9GABFBDH2C4P2, Extended Request ID: MzT0OqT9OnlKhjhr2wHb8+cznjymX5qDFQ3JQ4Voku0epF/M0wHpcNm0oQcdEY20FrQ6llXUf6dxNnqMMhIo+w==
+09:21:13.464 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: 4YT9GABFBDH2C4P2, Extended Request ID: MzT0OqT9OnlKhjhr2wHb8+cznjymX5qDFQ3JQ4Voku0epF/M0wHpcNm0oQcdEY20FrQ6llXUf6dxNnqMMhIo+w==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testUseItemInInventory" classname="GameTest" time="0.298">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:13.655 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@3ea48c37, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@11e834ad, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@710ae6a7, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@25d911a, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@18026052, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@489f62a3, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@6e068ac9, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@3d0352, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@bb6f3f7, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@388f1258, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@62058742, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@aca2fc3, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@36df4c26, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@76828577, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@38732372, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@639cb788, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@2fee69a1, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@4d25f816, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@6c6c2a73, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@6a4af081]
+09:21:13.657 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@6e068ac9' modified the message with its modifyHttpRequest method.
+09:21:13.657 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:13.658 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:13.658 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:87535ba9-8639-1dab-dcfd-f3901ee3e10f
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072113Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:13.658 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: feea2f3478b15726033b6c4ee5ec5cfc4f2fd8be2b065a1ef31b3a13f232a076
+09:21:13.659 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072113Z
+20240607/eu-north-1/s3/aws4_request
+feea2f3478b15726033b6c4ee5ec5cfc4f2fd8be2b065a1ef31b3a13f232a076
+09:21:13.711 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:13.776 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:13.841 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: 4YT7K761BJKM6BSG, Extended Request ID: 08zTCwS+ekLAHhlx61jLyogiLUQXOsH0praQ8K+/cBGvaIYbMhGF6rUc7kLrP+OZzwpYkR5xTFLC4d05isSJvw==
+09:21:13.841 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: 4YT7K761BJKM6BSG, Extended Request ID: 08zTCwS+ekLAHhlx61jLyogiLUQXOsH0praQ8K+/cBGvaIYbMhGF6rUc7kLrP+OZzwpYkR5xTFLC4d05isSJvw==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+  <testcase name="testConstructor" classname="GameTest" time="0.314">
+    <system-out><![CDATA[true
+true
+true
+true
+09:21:13.948 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Creating an interceptor chain that will apply interceptors in the following order: [software.amazon.awssdk.core.internal.interceptor.HttpChecksumValidationInterceptor@52a67293, software.amazon.awssdk.awscore.interceptor.HelpfulUnknownHostExceptionInterceptor@793cef95, software.amazon.awssdk.awscore.eventstream.EventStreamInitialRequestInterceptor@38f502fc, software.amazon.awssdk.awscore.interceptor.TraceIdExecutionInterceptor@67c21bf, software.amazon.awssdk.services.s3.auth.scheme.internal.S3AuthSchemeInterceptor@67afe909, software.amazon.awssdk.services.s3.endpoints.internal.S3ResolveEndpointInterceptor@79f1e22e, software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@6903ed0e, software.amazon.awssdk.services.s3.internal.handlers.StreamingRequestInterceptor@e154848, software.amazon.awssdk.services.s3.internal.handlers.CreateBucketInterceptor@16ea0f22, software.amazon.awssdk.services.s3.internal.handlers.CreateMultipartUploadRequestInterceptor@60fc7f43, software.amazon.awssdk.services.s3.internal.handlers.DecodeUrlEncodedResponseInterceptor@16e195cf, software.amazon.awssdk.services.s3.internal.handlers.GetBucketPolicyInterceptor@3212d853, software.amazon.awssdk.services.s3.internal.handlers.S3ExpressChecksumInterceptor@74c7522c, software.amazon.awssdk.services.s3.internal.handlers.AsyncChecksumValidationInterceptor@77c23d90, software.amazon.awssdk.services.s3.internal.handlers.SyncChecksumValidationInterceptor@6d17914a, software.amazon.awssdk.services.s3.internal.handlers.EnableTrailingChecksumInterceptor@49631cfb, software.amazon.awssdk.services.s3.internal.handlers.ExceptionTranslationInterceptor@77b71c9, software.amazon.awssdk.services.s3.internal.handlers.GetObjectInterceptor@6133e20b, software.amazon.awssdk.services.s3.internal.handlers.CopySourceInterceptor@30ffb2a6, software.amazon.awssdk.services.s3.internal.handlers.ObjectMetadataInterceptor@612af486]
+09:21:13.949 [main] DEBUG software.amazon.awssdk.core.interceptor.ExecutionInterceptorChain -- Interceptor 'software.amazon.awssdk.services.s3.endpoints.internal.S3RequestSetEndpointInterceptor@6903ed0e' modified the message with its modifyHttpRequest method.
+09:21:13.950 [main] DEBUG software.amazon.awssdk.request -- Sending Request: DefaultSdkHttpFullRequest(httpMethod=GET, protocol=https, host=aws-bucket-game-saves.s3.eu-north-1.amazonaws.com, encodedPath=, headers=[amz-sdk-invocation-id, User-Agent], queryParameters=[list-type, max-keys])
+09:21:13.950 [main] DEBUG software.amazon.awssdk.core.internal.http.pipeline.stages.SigningStage -- Using SelectedAuthScheme: aws.auth#sigv4
+09:21:13.951 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request: GET
+/
+list-type=2&max-keys=1
+amz-sdk-invocation-id:ac99c254-b011-3a5c-f3dc-c2bff558e146
+amz-sdk-request:attempt=1; max=4
+host:aws-bucket-game-saves.s3.eu-north-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240607T072113Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+09:21:13.951 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 Canonical Request Hash: e94f7ddcb480b3293e523193d2113ff21c29550312e26a5764876e1f7ae26b4f
+09:21:13.951 [main] DEBUG software.amazon.awssdk.http.auth.aws.internal.signer.DefaultV4RequestSigner -- AWS4 String to sign: AWS4-HMAC-SHA256
+20240607T072113Z
+20240607/eu-north-1/s3/aws4_request
+e94f7ddcb480b3293e523193d2113ff21c29550312e26a5764876e1f7ae26b4f
+09:21:14.001 [main] DEBUG software.amazon.awssdk.http.apache.internal.conn.SdkTlsSocketFactory -- socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.3, TLSv1.2]
+09:21:14.073 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.075 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.076 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.075 [main] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- created: aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.076 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.077 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.078 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.082 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.083 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.083 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.083 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.083 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.084 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.084 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.084 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.084 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.085 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down output of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.086 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- shutting down input of aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.086 [Finalizer] DEBUG software.amazon.awssdk.http.apache.internal.net.SdkSslSocket -- closing aws-bucket-game-saves.s3.eu-north-1.amazonaws.com/3.5.216.58:443
+09:21:14.179 [main] DEBUG software.amazon.awssdk.requestId -- Received successful response: 200, Request ID: 3Z25RX2M7YQ3Y1A7, Extended Request ID: UzbyybePokwcTVRrIC6ntj9O1x11SoguhI5zCBB2gor0vIkfLvg0QacKqDPll9Ej3H4XAkwXmNNe009Hw9TRKw==
+09:21:14.180 [main] DEBUG software.amazon.awssdk.request -- Received successful response: 200, Request ID: 3Z25RX2M7YQ3Y1A7, Extended Request ID: UzbyybePokwcTVRrIC6ntj9O1x11SoguhI5zCBB2gor0vIkfLvg0QacKqDPll9Ej3H4XAkwXmNNe009Hw9TRKw==
++ FUNZIONA true
+true
+true
+true
+]]></system-out>
+  </testcase>
+</testsuite>

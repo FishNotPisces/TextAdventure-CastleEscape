@@ -1,0 +1,26 @@
+-classpath
+'C:/Users/Alessia/.m2/repository/software/amazon/awssdk/s3/2.25.58/s3-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/aws-xml-protocol/2.25.58/aws-xml-protocol-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/aws-query-protocol/2.25.58/aws-query-protocol-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/protocol-core/2.25.58/protocol-core-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/arns/2.25.58/arns-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/profiles/2.25.58/profiles-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/crt-core/2.25.58/crt-core-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/http-auth/2.25.58/http-auth-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/identity-spi/2.25.58/identity-spi-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/http-auth-spi/2.25.58/http-auth-spi-2.25.58.jar;C:/Users/Alessia/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/http-auth-aws/2.25.58/http-auth-aws-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/checksums/2.25.58/checksums-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/checksums-spi/2.25.58/checksums-spi-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/sdk-core/2.25.58/sdk-core-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/auth/2.25.58/auth-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/eventstream/eventstream/1.0.1/eventstream-1.0.1.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/http-client-spi/2.25.58/http-client-spi-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/regions/2.25.58/regions-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/annotations/2.25.58/annotations-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/utils/2.25.58/utils-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/aws-core/2.25.58/aws-core-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/metrics-spi/2.25.58/metrics-spi-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/json-utils/2.25.58/json-utils-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/third-party-jackson-core/2.25.58/third-party-jackson-core-2.25.58.jar;C:/Users/Alessia/.m2/repository/software/amazon/awssdk/endpoints-spi/2.25.58/endpoints-spi-2.25.58.jar;C:/Users/Alessia/.m2/repository/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar;C:/Users/Alessia/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar;C:/Users/Alessia/.m2/repository/ch/qos/logback/logback-classic/1.4.12/logback-classic-1.4.12.jar;C:/Users/Alessia/.m2/repository/ch/qos/logback/logback-core/1.4.12/logback-core-1.4.12.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'C:/Users/Alessia/OneDrive/Desktop/Uni/UNI 2/2 SEM/Progetto-TEXT-ADVENTURE/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Alessia/OneDrive/Desktop/Uni/UNI 2/2 SEM/Progetto-TEXT-ADVENTURE/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Progetto-TEXT-ADVENTURE 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'C:/Users/Alessia/OneDrive/Desktop/Uni/UNI 2/2 SEM/Progetto-TEXT-ADVENTURE/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Progetto-TEXT-ADVENTURE 1.0-SNAPSHOT API'

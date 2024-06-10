@@ -1,0 +1,76 @@
+@startuml
+
+title System sequence diagram
+actor Player
+participant System
+
+System --> Player : main screen is displayed
+System -> Player: asks your name
+Player -> System: replies
+System --> Player: game options are displayed
+
+alt newGame()
+  Player -> System: new game
+
+else loadGame()
+  Player -> System: load game
+end
+
+System --> Player: configuration is displayed
+
+loop while winning condition is false
+  System -> Player: asks for a command
+  alt lookAround()
+    Player -> System: look around
+    System --> Player: list of the items in the room is displayed
+  else go( <direction> )
+    Player -> System: go <direction>
+    System --> Player: new configuration is displayed
+  else interact( <item> )
+    Player -> System: interact <item>
+    System --> Player: a description of the item is displayed
+    alt if player selects use( <item> )
+      Player -> System: use <item>
+      System --> Player: a message is displayed
+    end
+  else pick( <item> )
+    Player -> System: pick <item>
+    System --> Player: item is picked
+  else drop( <item> )
+    Player -> System: drop <item>
+    System --> Player: item is dropped
+  else status()
+    Player -> System: check status
+    System --> Player: player's inventory and life points are displayed
+  else help()
+    Player -> System: get help
+    System --> Player: commands are described
+  else restart()
+    Player -> System: restart
+    System -> System: start a new game
+    System --> Player: initial configuration is displayed
+  else exit()
+    Player -> System: exit
+    alt if player selects save()
+      Player -> System: save
+      System --> Player: game is saved
+    end
+    System --> Player: quit the game
+  else save()
+    Player -> System: save
+    System --> Player: the game is saved
+  else else
+    System --> Player : Invalid Command
+  end
+end
+
+System --> Player: winning message is displayed
+alt restart()
+    Player -> System: restart
+    System -> System: start a new game
+    System --> Player: initial configuration is displayed
+else exit
+    Player -> System: exit
+    System --> Player: quit the game
+end
+@enduml

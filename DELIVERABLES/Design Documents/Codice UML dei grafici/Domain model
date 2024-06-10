@@ -1,0 +1,64 @@
+@startuml
+object Player
+object Win
+object Exit
+object Load
+object Save
+object Go
+object NewGame
+object Restart
+object Status
+object LookAround
+object Drop
+object Interact
+object Pick
+object Use
+object Game
+object Room
+object Object
+object LifePoints
+object PlayerInventory
+object RoomStorage
+
+Player "1" -|> "1  " Win : view
+Player "1" ---|> "1  " Exit : requires
+Player "1" ---|> "1  " Save : requires
+Player "1" --|> "1  " Load : requires
+Player "1" --|> "1  " Go :requires
+Player "1" --|> "1  " NewGame : requires
+Player "1" --|> "1  " Restart : requires
+Player "1" --|> "1      " Status :view
+Player "1" --|> "1   " LookAround :view
+Player "1" --|> "1     " Interact :view
+Player "1" --|> "1  " Pick :requires
+Player "1" --|> "1      " Drop :requires
+
+Exit "1" --|> "1    " Game :exit
+Save "1" --|> "1 " Game :save
+Load "1" -|> "1" Game :load
+NewGame "1  " --|> "1" Game :edit
+Restart "1 " --|> "1      " Game :edit
+
+Game "1" --|> "        1" Win :report
+
+Interact "1" --|> "1   " Use :requires
+Interact "1  " --|> "1" Object :requires
+Use "1   " --|> "1    " Object :requires
+Pick "1" -|> "1    " Object :requires
+Drop "1 " --|> "1" Object :release
+
+Status "1 " ---|> "1" PlayerInventory:view
+Status "1" --|> "1   " LifePoints :view
+
+LookAround "1 " --|> "1 " RoomStorage:view
+
+Go "1 " --|> "1  " Room :move
+
+Room "n" --* "1" Game :composed
+RoomStorage "1" --* "   1" Room :owns
+RoomStorage "   1" *-- "n" Object :contains
+RoomStorage "n " <|--|> "1       " PlayerInventory:move
+Object "n " --* "1 " PlayerInventory:contains
+
+Exit "1   "--|>"1   " Save :save
+@enduml

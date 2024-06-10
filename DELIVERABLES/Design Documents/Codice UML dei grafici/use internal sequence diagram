@@ -1,0 +1,61 @@
+@startuml
+title USE internal sequence diagram
+
+actor User
+Participant Controller
+Participant CommandReader
+Participant Game
+Participant Player
+Participant Storage
+
+User -> Controller : use <item>
+activate Controller
+
+Controller -> CommandReader : read(use <item>)
+activate CommandReader
+CommandReader -> Game : use(<item>)
+activate Game
+
+Game -> Player : getInventory()
+activate Player
+Player --> Game : return storage
+deactivate Player
+
+Game -> Storage : storage.hasItem(<item>)
+activate Storage
+Storage --> Game : return boolean
+deactivate Storage
+
+alt boolean = false
+  Game --> Controller : show(message)
+  Game --> CommandReader : return null
+  else else
+    Game -> Storage : storage.getItem(<item>)
+    activate Storage
+    Storage --> Game : return item
+    deactivate Storage
+    Game -> LockedItem : lastItemUsed.unlock(item)
+    activate LockedItem
+    LockedItem --> Game : return string
+    deactivate LockedItem
+    alt string = null
+      Game --> Controller : show(message)
+      Game --> CommandReader : return null
+    else else
+    Game -> Game : specialCases(item)
+    Game -> Storage : remove(<item>)
+    activate Storage
+    Storage --> Game : return itemRemoved
+    deactivate Storage
+      Game --> Controller : show(message)
+      Game --> CommandReader : return itemRemoved
+    end
+end
+deactivate Game
+deactivate CommandReader
+deactivate Controller
+
+
+
+
+@enduml

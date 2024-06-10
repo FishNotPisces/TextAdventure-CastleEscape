@@ -1,0 +1,256 @@
+@startuml
+class CastleEscape{
+  + {static} main(String[]) : void
+}
+
+class S3bucket{
+  + S3bucket(String, Region, boolean)
+  --
+  - s3 : S3Client
+  - bucketName : String
+  - gson : Gson
+  - isCloudOn : boolean
+  --
+  + {static} checkCredentials() : boolean
+  + {static} checkCloudConnection() : boolean
+  + {static} getCredentials(String) : String
+  + saveGameState(String, Object) : String
+  + loadGameState(String, Class<T>) : <T> T
+}
+
+class Controller{
+  + Controller()
+  --
+  # game : game
+  # reader : CommandReader
+  # window : JFrame
+  - mainPanel : JPanel
+  # imageLabel : JLabel
+  - inputField : JTextField
+  # outputField : JTextPane
+  - jsPane : JScrollPane
+  - gameStarted : boolean
+  - imageHallPath : String
+  - imageLabPath : String
+  - imageKitchenPath : String
+  - imageStudyPath : String
+  - imageDungeonsPath : String
+  - imageStartPath : String
+  - imageVictoryPath : String
+  # name : String
+  - bucket : S3bucket
+  # isCloudActive : boolean
+  # lastMessageDisplayed : String
+  --
+  + save() : void
+  + load() : Game
+  + show(String) : void
+  + update(String) : void
+  # getLastMessage() : String
+  + showImage(String) : void
+  + restart() : void
+  + close() : void
+  # setUpCloudBucket() : boolean
+  - setStartField() : void
+  - setMainField() : void
+  - createMainField() : void
+  - changeImage(String) : void
+  # readInput(String) : void
+  - customizeScrollBar() : void
+}
+
+class Game{
+  + Game(Controller, String)
+  --
+  - map : GameMap
+  - player : Player
+  + controller : Controller
+  # lastItemUsed : Item
+  - WIN_CONDITION : boolean
+  --
+  + createPlayer(String)
+  + getPlayer() : Player
+  + getMap() : GameMap
+  + interact(String) : Item
+  + use(String) : Item
+  + help() : void
+  + go(String) : Location
+  + exit() : void
+  + updateLastItem(String) : void
+  + victory() : String
+  + isWinCondition() : boolean
+  - specialCases(Item) : String
+  - specialCases(LockedItem, Item) : String
+}
+
+class GameMap{
+    + GameMap()
+    --
+    - rooms : List<location>
+    --
+    + get(String) : Location
+    + getExit(Location, String) : Location
+    + translateCoordinate(String, String) : String
+    + printDirections(Location) : String
+    - createRooms() : void
+}
+
+class CommandReader{
+  + CommandReader(Controller, Game)
+  --
+  - game : Game
+  - controller : Controller
+  # lastCommandUsed : String
+  --
+  + read(String) : void
+  # updateLastCommand(String) : void
+}
+
+class Player{
+  + Player(String)
+  --
+  + name : String
+  - location : Location
+  - inventory : Storage
+  - lifePoints : int
+  - lastLocations : Stack<Location>
+  --
+  + getName() : String
+  + getInventory() : Storage
+  + getLocation() : Location
+  + setLocation(Location) : void
+  + popLastLocation() : Location
+  + loseLifePoints(int) : void
+  + getLifePoints() : int
+  + status() : String
+  + pick(String) : Item
+  + drop(String) : Item
+  + lookAround() : String
+  - specialCases(Item) : Item
+}
+
+class Registry{
+  - {static} itemMap : Map<UUID, Item>
+  - {static} locationMap: Map<UUID, Location>
+  --
+  + {static} registerItem(Item) : void
+  + {static} getItem(UUID) : Item
+  + {static} registerLoc(Location) : void
+  + {static} getLoc(UUID) : Location
+}
+
+class Location{
+  + Location(String, String, Storage, List<String>, boolean)
+  + Location(UUID, String, String, Storage, List<String>, boolean)
+  --
+  - name : String
+  - description : String
+  - unlocked : boolean
+  - storage : Storage
+  - exits : List<String>
+  - id : UUID
+  + {static} class LocationSerializer
+    '+ serialize(Location, Type, JsonSerializationContext) : JsonElement
+  + {static} class LocationDeserializer
+    '+ deserialize(JsonElement, Type, JsonSerializationContext) : Location
+  --
+  + getName() : String
+  + getDescription() : String
+  + getExit() : List<String>
+  + getStorage() : Storage
+  + isUnlocked() : boolean
+  + setUnlocked() : void
+  + getId() : UUID
+}
+
+class Storage{
+   + Storage()
+   + Storage(double)
+   --
+   + {static} WEIGHT_UNLIMITED : double
+   - maxWeight : double
+   - stor : Map<String, List<Item>>
+   --
+   + getMaxWeight() : double
+   + getWeight() : int
+   + hasItem(String) : boolean
+   + add(Item) : Item
+   + remove(String) : Item
+   + removeItem(Item) : Item
+   + isEmpty() : boolean
+   + getItem(String) : Item
+   + printItems() : String
+}
+
+class Item {
+  + Item(String, String, boolean, boolean)
+  + Item(UUID, String, String, boolean, boolean)
+  --
+  - name : String
+  - description : String
+  - visible : boolean
+  - collectable :  boolean
+  - id : UUID
+  + {static} class ItemSerializer
+      '+ serialize(Item, Type, JsonSerializationContext) : JsonElement
+  + {static} class ItemDeserializer
+      '+ deserialize(JsonElement, Type, JsonSerializationContext) : Item
+  --
+  + getName() : String
+  + getDescription() : String
+  + isCollectable() : boolean
+  + isVisible() : boolean
+  + setVisible(boolean) : void
+  + getID() : UUID
+}
+
+class ContainerItem{
+  + ContainerItem(String, String, boolean, boolean, Item, String)
+  + ContainerItem(UUID, String, String, boolean, boolean, Item, String)
+  --
+  - itemContained : Item
+  - altDescription : String
+  --
+  + getItemContained() : Item
+  + getAltDescription() : String
+  + setVisibleItemContained() : void
+}
+
+class LockedItem{
+  + LockedItem(String, String, boolean, boolean, List<Item>, Object, String, String)
+  + LockedItem(UUID, String, String, boolean, boolean, List<Item>, Object, String, String)
+  --
+  - objects : List<Item>
+  - itemBlocked : Object
+  - action : String
+  - altDescription : String
+  --
+  + objectSize() : int
+  + getObject(String) : Item
+  + getObjects() : List<Item>
+  + getAltDescription() : String
+  + getAction() : String
+  + removeObj(Item) : void
+  + getItemBlocked() : Object
+  + unlockItem(Item) : String
+}
+
+CastleEscape --> Controller : start
+Controller --> S3bucket : use
+Controller "1" <-> "1" CommandReader : create
+CommandReader "1" -> "1" Game
+Controller "1" <-> "1" Game : create
+Player "1" --> "1" Location : located
+
+Game "1" -> "1" Player : create
+Storage "1" *-- "n" Item : contains
+Player "1" -> "1" Storage : has
+Location "1" -> "1" Storage : has
+Game "1" --> "1" GameMap : create
+GameMap "1" *- "n" Location : contains
+Item <|-- ContainerItem : extends
+Item <|-- LockedItem : extends
+Registry "1" *- "1" Item
+Location "1" -* "1" Registry
+
+@enduml

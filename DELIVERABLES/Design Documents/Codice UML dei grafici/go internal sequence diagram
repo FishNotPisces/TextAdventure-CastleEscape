@@ -1,0 +1,75 @@
+@startuml
+
+actor User
+Participant Controller
+Participant CommandReader
+Participant Game
+Participant Player
+Participant GameMap
+
+User -> Controller : go <direction>
+
+Activate Controller
+
+Controller -> CommandReader : read(go <direction>)
+Activate CommandReader
+CommandReader -> Game : go(<direction>)
+Activate Game
+alt direction = null
+  Game -> Player : getLocation()
+  Activate Player
+  Player --> Game : return location
+  Deactivate Player
+  Game -> GameMap : printDirections(location)
+  Activate GameMap
+  GameMap --> Game : return directions
+  Deactivate GameMap
+
+  Game --> Controller : show(directions)
+  Game --> CommandReader : return null
+else direction = back
+   Game -> Player : popLastLocation()
+
+    Activate Player
+    Player --> Game : return location
+    Deactivate Player
+    Game -> Player : setLocation(Location)
+    Activate Player
+    Deactivate Player
+    Game -> Controller : showImage(location)
+    Game -> Controller : show(location.getDescription())
+    Game --> CommandReader : return location
+    CommandReader -> CommandReader : updateLastCommand()
+else else
+
+  Game -> Player : getLocation()
+  Activate Player
+  Player --> Game : return location
+  Deactivate Player
+
+  Game -> GameMap : getExit(location, <direction>)
+  Activate GameMap
+  GameMap --> Game : return location
+  Deactivate GameMap
+
+  alt Location = null || !Location.isUnlocked()
+    Game -> Controller : show(direction not valid)
+    Game --> CommandReader : return null
+  else else
+    Game -> Player : setLocation(Location)
+    Activate Player
+    Deactivate Player
+    Game -> Controller : showImage(location)
+    Game -> Controller : show(location.getDescription())
+    Game --> CommandReader : return location
+    CommandReader -> CommandReader : updateLastCommand()
+    Deactivate Controller
+    Deactivate Game
+    Deactivate CommandReader
+  end
+end
+
+
+
+
+@enduml
